@@ -32,7 +32,7 @@ app.post('/login', (req, res) => {
     login(req, res, bcrypt)
 })
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log('yoooooooooooo')
 })
 
